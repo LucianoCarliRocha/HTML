@@ -1,0 +1,110 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f4f4f4;
+        }
+
+        .actions {
+            text-align: center;
+        }
+
+        .actions a {
+            text-decoration: none;
+            color: #fff;
+            margin: 0 5px;
+            padding: 5px 10px;
+            border-radius: 3px;
+            font-weight: bold;
+        }
+
+        .actions .edit {
+            background-color: #007bff;
+        }
+
+        .actions .delete {
+            background-color: #dc3545;
+        }
+
+        .actions .edit:hover {
+            background-color: #0056b3;
+        }
+
+        .actions .delete:hover {
+            background-color: #c82333;
+        }
+
+        .actions .icon {
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nome</th> 
+                <th>E-mail</th>
+                <th>Data Nascimento</th>
+                <th>Sexo</th>
+                <th>Estado civil</th>
+                <th></th>Interesses</th>
+                <th colspan="2">Ações</th>
+            </tr>
+        </thead>
+        <tr>
+            <td>01</td>
+            <td>Jessica</td>
+            <td>email@email.com</td>
+            <td>21/01/1993</td>
+            <td>Feminino</td>
+            <td>Casada</td>
+            <td>Arte, esporte</td>
+            <td class="actions">
+                <a href="#" class="edit"><span class="icon">&#9998;</span></a>
+            </td>
+            <td class="actions">
+                <a href="#" class="delete"><span class="icon">&#10060;</span></a>
+        </tr>
+        <tr>
+            <td>01</td>
+            <td>Alex</td>
+            <td>email@email.com</td>
+            <td>21/01/1995</td>
+            <td>Masculino</td>
+            <td>Solteiro</td>
+            <td>Esporte</td>
+            <td class="actions">
+                <a href="#" class="edit"><span class="icon">&#9998;</span></a>
+            </td>
+            <td class="actions">
+                <a href="#" class="delete"><span class="icon">&#10060;</span></a>
+        </tr>
+        </tr>
+    </table>
+
+</body>
+</html>

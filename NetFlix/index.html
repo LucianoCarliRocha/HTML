@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gatoflix Brasil</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+        .navBar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7); /* Fundo ligeiramente transparente */
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        .navBar select {
+            background-color: rgba(51, 51, 51, 0.418);
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .navBar .botaoNav {
+            background-color: #e50914;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .navBar .botaoNav:hover {
+            background-color: #f40612;
+        }
+        .texto {
+            margin-top: 100px; /* Espaço para a navbar fixa */
+            padding: 20px;
+        }
+        .texto h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+        .texto h3 {
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+        .texto h4 {
+            font-size: 1.2em;
+            margin: 20px 0;
+        }
+        .login {
+            margin-top: 30px;
+            padding: 20px;
+        }
+        .login input[type="text"] {
+            padding: 10px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            margin-right: 10px;
+            width: 300px;
+        }
+        .login .botaoVamosLa {
+            background-color: #e50914;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .login .botaoVamosLa:hover {
+            background-color: #f40612;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navBar">
+        <select name="idioma">
+            <option>Português</option>
+            <option>Inglês</option>
+        </select>
+        <button class="botaoNav">Entrar</button>
+    </div>
+
+    <div class="texto">
+        <h1>Filmes, séries e muito mais, sem limites</h1>
+        <h3>A partir de R$ 20,90. Cancele quando quiser.</h3>
+        <h4>Quer assistir? Informe seu email para criar ou reiniciar sua assinatura.</h4>
+    </div>
+
+    <div class="login">
+        <input type="text" placeholder="Digite seu e-mail" title="Email">
+        <button class="botaoVamosLa">Vamos lá ></button>
+    </div>
+
+</body>
+</html>
